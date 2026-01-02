@@ -4,49 +4,38 @@ body {
     background-color: #ffffff;
 }
 
-.top {
+header {
+    position: fixed;
+    top: 0;
+    left: 0; /* Ensures it spans the full width */
+    height: 5%;
+    width: 100%;
+    /* Add padding/margin to your main content to prevent overlap */
     background-color: #3dc662;
     color: #ffffff;
     padding: 0px 10px;
     display: flex;
 }
 
-.top-title {
+header h1 {
     display: inline-block;
-}
-
-.top-title > h1 {
     margin: auto;
     text-align: center;
 }
 
-.top-menu {
+header ul {
+    display: flex;
     flex-grow: 1;
-    display: inline-block;
-    margin: 0px;
-    text-align: center;
-    height: inherit;
-}
-
-.top-menu > ul {
-    list-style-type: none;
-    margin: auto;
-    padding: 0%;
-    overflow: hidden;
+    margin: 0px auto;
+    padding: 0px;
     height: 100%;
-    display: flex;
-}
-
-.top-menu > ul > li {
-    display: flex;
-    margin: 0% auto;
-}
-
-.top-menu > ul a {
-    display: flex;
-    text-decoration: none;
     text-align: center;
-    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+header > ul > li {
+    display: flex;
     margin: 0% auto;
     height: 100%;
     color: inherit;
@@ -54,6 +43,12 @@ body {
 
 .top-menu > ul > li a:hover {
     background-color: #016d1e; 
+}
+
+main {
+    height: 90%;
+    margin-top: 5%; /* Adjust based on header height */
+    margin-bottom: 5%; /* Adjust based on footer height */
 }
 
 body > div {
@@ -93,4 +88,13 @@ h1 {
     background-color: #016d1e;
     color: #EEEEEE;
     text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0; /* Ensures it spans the full width */
+  height: 5%;
+  width: 100%;
+  /* Add padding/margin to your main content to prevent overlap */
 }
